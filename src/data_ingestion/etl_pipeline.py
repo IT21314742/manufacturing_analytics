@@ -22,3 +22,6 @@ class ETLPipeline:
     def __init__(self):
         load_dotenv()
         self.db_connection = self.create_db_connection()
+    
+    def _create_db_connection(self):
+        
