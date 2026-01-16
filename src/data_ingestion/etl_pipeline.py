@@ -134,4 +134,8 @@ class ETLPipeline:
         logger.info("Starting ETL Pipeline execution")
         logger.info("=" * 50)
 
-        
+        try:
+            #Extract
+            raw_data = self.extract()
+            logger.info(f"Extracted: {len(raw_data['manufacturing'])} manufacturing records")
+            
