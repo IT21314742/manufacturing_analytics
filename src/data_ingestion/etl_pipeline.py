@@ -116,3 +116,7 @@ class ETLPipeline:
                 INSERT INTO fact_production 
                 SELECT * FROM fact_production_staging
                 WHERE production_id NOT IN (SELECT production_id FROM fact_production)"""
+
+                conn.execute(text(merge_query))
+                conn.execute(text("DROP TABLE fact_production_staging"))
+                conn.commit()
