@@ -110,3 +110,6 @@ class ETLPipeline:
                    index=False 
                 )
             
+            # Use SQL to merge into main table
+            with self.db_connection.connect() as conn:
+                merge_query = """"""
