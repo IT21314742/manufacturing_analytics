@@ -146,3 +146,12 @@ class ETLPipeline:
             success = self.load(transformed_data)
 
             if success:
+                logger.info("ETL Pipeline executed successfully.")
+            else:
+                logger.error("ETL Pipeline execution failed during loading.")
+
+            return success
+        
+        except Exception as e:
+            logger.error(f"ETL Pipeline execution failed: {e}")
+            return False
