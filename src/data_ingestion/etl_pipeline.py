@@ -130,4 +130,8 @@ class ETLPipeline:
     
     def run_pipeline(self):
         """Execute complete ETL pipeline"""
+        logger.info("=" * 50)
+        logger.info("Starting ETL Pipeline execution")
+        logger.info("=" * 50)
+
         
