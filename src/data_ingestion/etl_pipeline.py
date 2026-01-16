@@ -77,4 +77,9 @@ class ETLPipeline:
         mfg_df['quality_score'] = (1 - (mfg_df['defects'] / mfg_df['quantity'])) * 100
 
         mfg_df['oee'] = self.calculate_oee(mfg_df) #gonna implement this
-        
+
+        #Handle missing values
+        mfg_df.fillna({
+            'downtime_minutes': 0,
+            'energy_consumption_kwh': mfg_df['energy_consumption_kwh'].median()
+        })
