@@ -69,4 +69,11 @@ class ETLPipeline:
     def transform(self, data_dict):
         """Transform and clean data"""
         logger.info("Starting data transformation...")
-        
+
+        transformed_data = {}
+
+        #Transform manufacturing data
+        mfg_df = data_dict['manufacturing']
+        mfg_df['quality_score'] = (1 - (mfg_df['defects'] / mfg_df['quantity'])) * 100
+
+        mfg_df['oee'] = 
