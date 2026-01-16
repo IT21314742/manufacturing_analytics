@@ -57,4 +57,12 @@ class ETLPipeline:
         #Get financial data 
         financial_df = self.get_financial_data()
 
-        
+        #Get Economical Indicators (mocked here)
+        economic_df = self.get_economic_data()
+
+        return {
+            'manufacturing': manufacturing_df,
+            'financial': financial_df,
+            'economic': economic_df
+        }
+    
