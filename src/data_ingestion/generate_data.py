@@ -13,10 +13,10 @@ def generate_manufacturing_data(start_date='2023-01-01', end_date='2024-01-01'):
     for date in dates:
         for _ in range(np.random.randint(5, 15)):  # Random number of entries per day
             data.append({
-                'date': date,
-                'machine_id': f"M{np,random.randint(1, 100):03d}",
+                'date': date.date(),
+                'machine_id': f"M{np.random.randint(1, 100):03d}",
                 'product_id': f"P{np.random.randint(1, 500):03d}",
-                'quantity': np.random.randint(100, 1000),
+                'quantity': np.random.randint(100, 10000),
                 'defects': np.random.randint(0, 50),
                 'downtime_minutes': np.random.randint(0, 120),
                 'operator': fake.name(),
