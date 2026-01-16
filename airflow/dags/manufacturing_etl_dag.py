@@ -35,7 +35,7 @@ etl_task = PythonOperator(
 
 data_quality_check = BashOperator(
     task_id='data_quality_check',
-    bash_command='python src/data_quality/validate_data.py'
+    bash_command='python src/data_quality/validate_data.py',
     dag=dag,
 )
 
