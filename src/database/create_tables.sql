@@ -25,3 +25,4 @@ CREATE TABLE fact_production (
     quality_score DECIMAL(5, 2),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
