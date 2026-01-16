@@ -1,3 +1,4 @@
+# airflow/dags/manufacturing_etl_dag.py
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
