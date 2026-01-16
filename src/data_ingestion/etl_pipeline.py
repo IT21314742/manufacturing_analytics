@@ -98,3 +98,6 @@ class ETLPipeline:
     
     def load(self, trnsformed_data):
         """Load data into database"""
+        logger.info("Starting data Loading...")
+
+        
