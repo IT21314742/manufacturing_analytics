@@ -18,5 +18,9 @@ def generate_manufacturing_data(start_date='2023-01-01', end_date='2024-01-01'):
                 'product_id': f"P{np.random.randint(1, 500):03d}",
                 'quantity': np.random.randint(100, 1000),
                 'defects': np.random.randint(0, 50),
-                
+                'downtime_minutes': np.random.randint(0, 120),
+                'operator': fake.name(),
+                'energy_consumption_kwh': np.random.uniform(100, 500)
             })
+
+    return pd.DataFrame(data)
