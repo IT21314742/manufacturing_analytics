@@ -91,3 +91,5 @@ class ETLPipeline:
         IQR = Q3 - Q1
         mfg_df = mfg_df[~((mfg_df['quantity'] < (Q1 - 1.5 * IQR)) | 
                           (mfg_df['quantity'] > (Q3 + 1.5 * IQR)))]
+        
+        
