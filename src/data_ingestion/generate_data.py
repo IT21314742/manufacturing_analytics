@@ -37,3 +37,4 @@ def generate_manufacturing_data(start_date='2023-01-01', end_date='2024-01-01'):
 
 #     df_financial = get_financial_data()
 #     print(df_financial.head())
+
