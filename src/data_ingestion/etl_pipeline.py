@@ -82,4 +82,5 @@ class ETLPipeline:
         mfg_df.fillna({
             'downtime_minutes': 0,
             'energy_consumption_kwh': mfg_df['energy_consumption_kwh'].median()
-        })
+        }, inplace=True)
+        
