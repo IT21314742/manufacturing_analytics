@@ -86,4 +86,6 @@ class ETLPipeline:
         
 
         #Remove outliers (using IQR method)
-        
+        Q1 = mfg_df['quantity'].quantile(0.25)
+        Q3 = mfg_df['quantity'].quantile(0.75)
+        IQR = Q3 - Q1
