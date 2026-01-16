@@ -66,3 +66,7 @@ class ETLPipeline:
             'economic': economic_df
         }
     
+    def transform(self, data_dict):
+        """Transform and clean data"""
+        logger.info("Starting data transformation...")
+        
