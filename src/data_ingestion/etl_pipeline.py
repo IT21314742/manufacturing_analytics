@@ -100,4 +100,6 @@ class ETLPipeline:
         """Load data into database"""
         logger.info("Starting data Loading...")
 
-        
+        try:
+            # Load manufacturing data
+            mfg_df = 
