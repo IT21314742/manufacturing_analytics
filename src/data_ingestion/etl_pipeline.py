@@ -6,7 +6,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 
-#Configure logging
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -26,7 +26,7 @@ class ETLPipeline:
     def _create_db_connection(self):
         """Create database connection with error handling"""
         try:
-            #Get Credentials from environment variables
+            # Get Credentials from environment variables
             db_user = os.getenv('DB_USER', 'vihan')
             db_password = os.getenv('DB_PASSWORD', 'Vihan')
             db_host = os.getenv('DB_HOST', 'localhost')
@@ -36,7 +36,7 @@ class ETLPipeline:
             connection_string = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
             engine = create_engine(connection_string)
 
-            #Test connection
+            # Test connection
             with engine.connect() as conn:
                 conn.execute(text("SELECT 1"))
 
@@ -51,13 +51,13 @@ class ETLPipeline:
         """Extract data from various sources"""
         logger.info("Starting data extraction...")
 
-        #generate manufacturing data
+        # Generate manufacturing data
         manufacturing_df = self.generate_manufacturing_data()
 
-        #Get financial data 
+        # Get financial data 
         financial_df = self.get_financial_data()
 
-        #Get Economical Indicators (mocked here)
+        # Get Economical Indicators (mocked here)
         economic_df = self.get_economic_data()
 
         return {
@@ -72,20 +72,20 @@ class ETLPipeline:
 
         transformed_data = {}
 
-        #Transform manufacturing data
+        # Transform manufacturing data
         mfg_df = data_dict['manufacturing']
         mfg_df['quality_score'] = (1 - (mfg_df['defects'] / mfg_df['quantity'])) * 100
 
         mfg_df['oee'] = self.calculate_oee(mfg_df) #gonna implement this
 
-        #Handle missing values
+        # Handle missing values
         mfg_df.fillna({
             'downtime_minutes': 0,
             'energy_consumption_kwh': mfg_df['energy_consumption_kwh'].median()
         }, inplace=True)
         
 
-        #Remove outliers (using IQR method)
+        # Remove outliers (using IQR method)
         Q1 = mfg_df['quantity'].quantile(0.25)
         Q3 = mfg_df['quantity'].quantile(0.75)
         IQR = Q3 - Q1
@@ -135,11 +135,14 @@ class ETLPipeline:
         logger.info("=" * 50)
 
         try:
-            #Extract
+            # Extract
             raw_data = self.extract()
             logger.info(f"Extracted: {len(raw_data['manufacturing'])} manufacturing records")
 
-            #Transform
+            # Transform
             transformed_data = self.transform(raw_data)
 
-            
+            # Load
+            success = self.load(transformed_data)
+
+            if success:
