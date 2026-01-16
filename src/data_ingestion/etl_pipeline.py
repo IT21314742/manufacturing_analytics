@@ -93,3 +93,5 @@ class ETLPipeline:
                           (mfg_df['quantity'] > (Q3 + 1.5 * IQR)))]
         
         transformed_data['manufacturing'] = mfg_df
+
+        return transformed_data
