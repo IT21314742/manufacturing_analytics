@@ -95,3 +95,5 @@ class ETLPipeline:
         transformed_data['manufacturing'] = mfg_df
 
         return transformed_data
+    
+    def load(self, trnsformed_data):
