@@ -112,4 +112,7 @@ class ETLPipeline:
             
             # Use SQL to merge into main table
             with self.db_connection.connect() as conn:
-                merge_query = """"""
+                merge_query = """
+                INSERT INTO fact_production 
+                SELECT * FROM fact_production_staging
+                WHERE production_id NOT IN (SELECT production_id FROM fact_production)"""
