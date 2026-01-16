@@ -53,4 +53,8 @@ class ETLPipeline:
 
         #generate manufacturing data
         manufacturing_df = self.generate_manufacturing_data()
+
+        #Get financial data 
+        financial_df = self.get_financial_data()
+
         
