@@ -125,3 +125,6 @@ class ETLPipeline:
             return True
         
         except Exception as e:
+            logger.error(f"Data Loading Failed: {e}")
+            return False
+        
