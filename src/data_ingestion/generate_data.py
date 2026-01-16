@@ -25,8 +25,15 @@ def generate_manufacturing_data(start_date='2023-01-01', end_date='2024-01-01'):
 
     return pd.DataFrame(data)
 
-def get_financial_data(ticker='AAPL', period='1y'):
-    """Get real Financial data from Yahoo Finance."""
-    stock = yf.Ticker(ticker)
-    hist = stock.history(period=period)
-    return 
+# def get_financial_data(ticker='AAPL', period='1y'):
+#     """Get real Financial data from Yahoo Finance."""
+#     stock = yf.Ticker(ticker)
+#     hist = stock.history(period=period)
+#     return hist.reset_index()
+
+# if __name__ == "__main__":
+#     df_manufacturing = generate_manufacturing_data()
+#     print(df_manufacturing.head())
+
+#     df_financial = get_financial_data()
+#     print(df_financial.head())
