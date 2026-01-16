@@ -25,3 +25,10 @@ class ETLPipeline:
     
     def _create_db_connection(self):
         """Create database connection with error handling"""
+        try:
+            #Get Credentials from environment variables
+            db_user = os.getenv('DB_USER', 'vihan')
+            db_password = os.getenv('DB_PASSWORD', 'Vihan')
+            db_host = os.getenv('DB_HOST', 'localhost')
+            db_port = os.getenv('DB_PORT', '5432')
+            
