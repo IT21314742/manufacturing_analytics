@@ -24,4 +24,4 @@ class ETLPipeline:
         self.db_connection = self.create_db_connection()
     
     def _create_db_connection(self):
-        
+        """Create database connection with error handling"""
