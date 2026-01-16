@@ -138,4 +138,8 @@ class ETLPipeline:
             #Extract
             raw_data = self.extract()
             logger.info(f"Extracted: {len(raw_data['manufacturing'])} manufacturing records")
+
+            #Transform
+            transformed_data = self.transform(raw_data)
+
             
