@@ -154,3 +154,9 @@ class ETLPipeline:
         except Exception as e:
             logger.error(f"ETL Pipeline execution failed: {e}")
             return False
+
+
+
+# if __name__ == "__main__":
+#     pipeline = ETLPipeline()
+#     pipeline.run_pipeline()
