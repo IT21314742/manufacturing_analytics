@@ -120,3 +120,8 @@ class ETLPipeline:
                 conn.execute(text(merge_query))
                 conn.execute(text("DROP TABLE fact_production_staging"))
                 conn.commit()
+
+            logger.info("data loaded successfully")
+            return True
+        
+        except Exception as e:
