@@ -27,3 +27,5 @@ CREATE TABLE fact_production (
 );
 
 ---Create Indexes for Performance Optimization---
+CREATE INDEX idx_fact_production_date ON fact_production(date_id);
+CREATE INDEX idx-fact_production_machine ON fact_production(machine_id);
