@@ -47,3 +47,10 @@ class ETLPipeline:
             logger.error(f"Database Connection Failed: {e}")
             raise
     
+    def extract(self):
+        """Extract data from various sources"""
+        logger.info("Starting data extraction...")
+
+        #generate manufacturing data
+        manufacturing_df = self.generate_manufacturing_data()
+        
