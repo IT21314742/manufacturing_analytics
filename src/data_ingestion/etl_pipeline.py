@@ -84,3 +84,6 @@ class ETLPipeline:
             'energy_consumption_kwh': mfg_df['energy_consumption_kwh'].median()
         }, inplace=True)
         
+
+        #Remove outliers (using IQR method)
+        
