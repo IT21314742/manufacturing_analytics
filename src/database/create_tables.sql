@@ -26,3 +26,4 @@ CREATE TABLE fact_production (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+---Create Indexes for Performance Optimization---
