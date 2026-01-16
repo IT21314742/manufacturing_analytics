@@ -127,4 +127,7 @@ class ETLPipeline:
         except Exception as e:
             logger.error(f"Data Loading Failed: {e}")
             return False
+    
+    def run_pipeline(self):
+        """Execute complete ETL pipeline"""
         
