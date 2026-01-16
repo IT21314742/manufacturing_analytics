@@ -97,3 +97,4 @@ class ETLPipeline:
         return transformed_data
     
     def load(self, trnsformed_data):
+        """Load data into database"""
