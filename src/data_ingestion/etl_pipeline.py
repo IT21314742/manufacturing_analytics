@@ -76,4 +76,5 @@ class ETLPipeline:
         mfg_df = data_dict['manufacturing']
         mfg_df['quality_score'] = (1 - (mfg_df['defects'] / mfg_df['quantity'])) * 100
 
-        mfg_df['oee'] = 
+        mfg_df['oee'] = self.calculate_oee(mfg_df) #gonna implement this
+        
