@@ -36,4 +36,14 @@ class ETLPipeline:
             connection_string = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
             engine = create_engine(connection_string)
 
-            
+            #Test connection
+            with engine.connect() as conn:
+                conn.execute(text("SELECT 1"))
+
+            logger.info("Database connection established successfully.")
+            return engine
+        
+        except SQLAlchemyError as e:
+            logger.error(f"Database Connection Failed: {e}")
+            raise
+    
