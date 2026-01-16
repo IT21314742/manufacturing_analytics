@@ -102,4 +102,8 @@ class ETLPipeline:
 
         try:
             # Load manufacturing data
-            mfg_df = 
+            mfg_df = transformed_data['manufacturing']
+            mfg_df.to_sql(
+                'fact_production_staging',
+                 self.db_connection,
+                  if_exists='replace', )
