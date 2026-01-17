@@ -35,6 +35,8 @@ COMMENT ON TABLE dim_date IS 'Time dimension table for all date-based analysis';
 
 -- Machine Dimension
 CREATE TABLE dim_machine(
-    machine_id SERIAL PRIMARY KEY,
+    machine_id VARCHAR(20) PRIMARY KEY,
+    machine_name VARCHAR(100) NOT NULL,
+    machine_type VARCHAR(50),
     
 )
