@@ -59,5 +59,6 @@ CREATE TABLE dim_product(
     material_cost DECIMAL(10,2),
     labor_cost DECIMAL(10,2),
     weight_kg DECIMAL(10,2),
+    target_production_time_minutes INTEGER,
     
 )
