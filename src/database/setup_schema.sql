@@ -38,5 +38,7 @@ CREATE TABLE dim_machine(
     machine_id VARCHAR(20) PRIMARY KEY,
     machine_name VARCHAR(100) NOT NULL,
     machine_type VARCHAR(50),
-    
+    location VARCHAR(100),
+    installation_date DATE,
+    manufacturer VARCHAR(100),
 )
