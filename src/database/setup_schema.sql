@@ -57,5 +57,6 @@ CREATE TABLE dim_product(
     unit_price DECIMAL(10,2) NOT NULL,
     cost_price DECIMAL(10,2) NOT NULL,
     material_cost DECIMAL(10,2),
+    labor_cost DECIMAL(10,2),
     
 )
