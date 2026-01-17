@@ -29,3 +29,13 @@ def create_database():
         'port': 5432
     }
     try:
+        # Connect to PostgreSQL server
+        logger.info(f"Connecting to PostgreSQL server at {params['host']}:{params['port']}")
+        conn = psycopg2.connect(
+            host=params['host'],
+            user=params['user'],
+            password=params['password'],
+            port=params['port']
+        
+        )
+        conn
