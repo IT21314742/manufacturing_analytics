@@ -28,3 +28,4 @@ End-to-end data pipeline for manufacturing analytics with financial integration.
 ```bash
 git clone https://github.com/yourusername/manufacturing-analytics.git
 cd manufacturing-analytics
+
