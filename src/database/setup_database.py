@@ -51,4 +51,8 @@ def create_database():
             logger.info("Database created successfully!")
         else:
             logger.info("Database 'manufacturing_analytics' already exists.")
-            
+
+        # Create analyst user (If not exists)
+        try:
+            cur.execute("""
+"""))
