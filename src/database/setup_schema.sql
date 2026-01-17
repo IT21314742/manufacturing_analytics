@@ -14,3 +14,4 @@ DROP TABLE IF EXISTS dim_supplier CASCADE;
 -- ============================================
 -- DIMENSION TABLES
 -- ============================================
+
