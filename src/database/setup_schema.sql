@@ -21,4 +21,7 @@ CREATE TABLE dim_date (
     date_id SERIAL PRIMARY KEY,
     full_date DATE NOT NULL UNIQUE,
     day INTEGER NOT NULL,
+    year INTEGER NOT NULL,
+    quarter INTEGER NOT NULL,
+    day_of_week INTEGER NOT NULL,
 )
