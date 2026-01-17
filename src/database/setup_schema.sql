@@ -54,4 +54,8 @@ CREATE TABLE dim_product(
     product_id VARCHAR(20) PRIMARY KEY,
     product_name VARCHAR(200) NOT NULL,
     product_category VARCHAR(100),
+    unit_price DECIMAL(10,2) NOT NULL,
+    cost_price DECIMAL(10,2) NOT NULL,
+    material_cost DECIMAL(10,2),
+    
 )
