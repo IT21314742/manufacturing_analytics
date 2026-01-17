@@ -59,7 +59,7 @@ class ManufacturingETL:
                     'operator_id': f'OP{np.random.randint(100, 999):03d}',
                     'quantity_produced': quantity,
                     'defects': defects,
-                    'rework_count': np.random.randint(0, int(defects * 0.3)),
+                    'rework_count': np.random.randint(0, max(1, int(defects * 0.3))),
                     'downtime_minutes': downtime,
                     'setup_time_minutes': np.random.randint(10, 30),
                     'quality_score': np.random.uniform(85, 99),
