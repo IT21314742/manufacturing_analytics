@@ -25,8 +25,8 @@ def create_database():
     # CHANGE THESE IF YOUR POSTGRES HAS DIFFERENT CREDENTIALS
     params = {
         'host': 'localhost',
-        'user': 'postgres',  # Default PostgreSQL superuser
-        'password': '1010',  # Change to YOUR password
+        'user': '',  # Default PostgreSQL superuser
+        'password': 'vihan',  # Change to YOUR password
         'port': '5432'
     }
     
