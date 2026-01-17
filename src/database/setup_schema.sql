@@ -30,3 +30,6 @@ CREATE TABLE dim_date (
     qarter_name VARCHAR(10,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+COMMENT ON TABLE dim_date IS 'Time dimension table for all date-based analysis';
+
