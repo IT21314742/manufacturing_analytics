@@ -64,3 +64,4 @@ CREATE TABLE dim_product(
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+COMMENT ON TABLE dim_product IS 'Product catelog with pricing and cost information';
