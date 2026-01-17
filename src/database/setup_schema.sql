@@ -24,4 +24,6 @@ CREATE TABLE dim_date (
     year INTEGER NOT NULL,
     quarter INTEGER NOT NULL,
     day_of_week INTEGER NOT NULL,
+    is_weekend BOOLEAN NOT NULL,
+    fiscal_year INTEGER NOT NULL,
 )
