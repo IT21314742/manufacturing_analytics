@@ -41,4 +41,6 @@ CREATE TABLE dim_machine(
     location VARCHAR(100),
     installation_date DATE,
     manufacturer VARCHAR(100),
+    capacity_per_hour DECIMAL(10,2),
+    maintenance_interval_days INTEGER,
 )
