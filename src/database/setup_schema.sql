@@ -1,0 +1,4 @@
+-- ============================================
+-- MANUFACTURING ANALYTICS DATABASE SCHEMA
+-- Complete setup script
+-- ============================================
