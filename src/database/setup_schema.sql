@@ -48,3 +48,5 @@ CREATE TABLE dim_machine(
 );
 
 COMMENT ON TABLE dim_machine IS 'Manufacturing machines and equipment details';
+
+-- Product Dimension
