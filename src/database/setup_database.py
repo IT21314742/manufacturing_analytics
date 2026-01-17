@@ -20,4 +20,12 @@ logger = logging.getLogger(__name__)
 
 def create_database():
     """Create the manufacturing_analytics database if it doesn't exist."""
-    
+
+    # Default connection parameters
+    params = {
+        'host': 'localhost',
+        'user': 'postgres', # Default PostgreDQL superuser
+        'password': 'vihan',
+        'port': 5432
+    }
+    try:
