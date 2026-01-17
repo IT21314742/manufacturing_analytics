@@ -26,4 +26,7 @@ CREATE TABLE dim_date (
     day_of_week INTEGER NOT NULL,
     is_weekend BOOLEAN NOT NULL,
     fiscal_year INTEGER NOT NULL,
-)
+    month_name VARCHAR(20),
+    qarter_name VARCHAR(10,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
