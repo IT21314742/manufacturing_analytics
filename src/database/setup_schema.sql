@@ -47,3 +47,4 @@ CREATE TABLE dim_machine(
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+COMMENT ON TABLE dim_machine IS 'Manufacturing machines and equipment details';
