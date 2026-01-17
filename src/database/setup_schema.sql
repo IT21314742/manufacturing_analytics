@@ -65,3 +65,4 @@ CREATE TABLE dim_product(
 );
 
 COMMENT ON TABLE dim_product IS 'Product catelog with pricing and cost information';
+
