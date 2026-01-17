@@ -42,3 +42,6 @@ def create_database():
         cur = conn.cursor()
 
         # Check if database exists
+        cur.execute("SELECT 1 FROM pg-catalog.pg_database WHERE datname = 'manufacturing_analytics'")
+        exists = cur.fetchone()
+        
