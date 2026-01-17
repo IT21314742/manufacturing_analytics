@@ -44,4 +44,9 @@ def create_database():
         # Check if database exists
         cur.execute("SELECT 1 FROM pg-catalog.pg_database WHERE datname = 'manufacturing_analytics'")
         exists = cur.fetchone()
-        
+
+        if not exists:
+            logger.info("Creating database 'manufacturing_analytics'...")
+            cur.execute(sql.SQL("CREATE DATABASE manufacturing_analytics"))
+            logger.info("Database created successfully!")
+            
