@@ -38,4 +38,7 @@ def create_database():
             port=params['port']
         
         )
-        conn
+        conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+        cur = conn.cursor()
+
+        # Check if database exists
