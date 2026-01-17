@@ -19,3 +19,5 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 def create_database():
+    """Create the manufacturing_analytics database if it doesn't exist."""
+    
