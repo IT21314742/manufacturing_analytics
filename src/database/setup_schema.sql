@@ -61,4 +61,5 @@ CREATE TABLE dim_product(
     weight_kg DECIMAL(10,2),
     target_production_time_minutes INTEGER,
     quality_standard VARCHAR(100),
-)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
