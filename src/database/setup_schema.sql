@@ -11,3 +11,6 @@ DROP TABLE IF EXISTS dim_product CASCADE;
 DROP TABLE IF EXISTS dim_supplier CASCADE;
 
 
+-- ============================================
+-- DIMENSION TABLES
+-- ============================================
