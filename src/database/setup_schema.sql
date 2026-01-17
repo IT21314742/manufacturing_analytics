@@ -46,3 +46,4 @@ CREATE TABLE dim_machine(
     status VARCHAR(20) DEFAULT 'active',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
