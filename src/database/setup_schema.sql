@@ -63,3 +63,4 @@ CREATE TABLE dim_product(
     quality_standard VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
