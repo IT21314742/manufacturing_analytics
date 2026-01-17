@@ -20,4 +20,5 @@ DROP TABLE IF EXISTS dim_supplier CASCADE;
 CREATE TABLE dim_date (
     date_id SERIAL PRIMARY KEY,
     full_date DATE NOT NULL UNIQUE,
+    day INTEGER NOT NULL,
 )
