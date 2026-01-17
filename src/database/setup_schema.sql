@@ -17,3 +17,6 @@ DROP TABLE IF EXISTS dim_supplier CASCADE;
 
 
 -- Date Dimension (Critical for time-based analysis)
+CREATE TABLE dim_date (
+    
+)
