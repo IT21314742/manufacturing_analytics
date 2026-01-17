@@ -50,4 +50,6 @@ CREATE TABLE dim_machine(
 COMMENT ON TABLE dim_machine IS 'Manufacturing machines and equipment details';
 
 -- Product Dimension
-CREATE TABLE dim_product()
+CREATE TABLE dim_product(
+    product_id VARCHAR(20) PRIMARY KEY,
+)
