@@ -44,4 +44,5 @@ CREATE TABLE dim_machine(
     capacity_per_hour DECIMAL(10,2),
     maintenance_interval_days INTEGER,
     status VARCHAR(20) DEFAULT 'active',
-)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
