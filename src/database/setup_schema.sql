@@ -34,3 +34,6 @@ CREATE TABLE dim_date (
 COMMENT ON TABLE dim_date IS 'Time dimension table for all date-based analysis';
 
 -- Machine Dimension
+CREATE TABLE dim_machine(
+    
+)
