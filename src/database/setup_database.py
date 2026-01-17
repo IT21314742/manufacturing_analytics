@@ -49,4 +49,6 @@ def create_database():
             logger.info("Creating database 'manufacturing_analytics'...")
             cur.execute(sql.SQL("CREATE DATABASE manufacturing_analytics"))
             logger.info("Database created successfully!")
+        else:
+            logger.info("Database 'manufacturing_analytics' already exists.")
             
