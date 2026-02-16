@@ -275,3 +275,17 @@ jupyter notebook notebooks/exploratory_analysis.ipynb
 
 
 ### Sample Query Result
+
+```
+-- Top 5 products by profitability
+SELECT 
+    product_name,
+    total_revenue,
+    total_cost,
+    (total_revenue - total_cost) as profit,
+    ROUND((total_revenue - total_cost)/total_revenue * 100, 2) as profit_margin
+FROM profitability_analysis
+WHERE date_trunc('month', transaction_date) = '2026-03-01'
+ORDER BY profit DESC
+LIMIT 5;
+```
