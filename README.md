@@ -63,6 +63,17 @@ At a high level, the system consists of:
 
 ### Runtime Sequence Explanation
 
+The system follows this execution flow:
+
+1. **Trigger** - Airflow DAG starts based on schedule or manual trigger
+2. **Extract Phase** - Python scripts connect to data sources and pull raw data
+3. **Staging** - Raw data is loaded into staging tables in PostgreSQL
+4. **Transform Phase** - Data is cleaned, joined, and business logic is applied
+5. **Load Phase** - Transformed data populates the star schema (fact/dimension tables)
+6. **Validation** - Data quality checks ensure integrity and completeness
+7. **Notification** - Success/failure alerts are logged and sent
+8. **Visualization** - Tableau connects to the warehouse for dashboard updates
+
 ## 🛠️ Tech Stack
 - **Database:** PostgreSQL (Star Schema)
 - **ETL:** Python (Pandas, SQLAlchemy), Apache Airflow
