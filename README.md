@@ -45,6 +45,17 @@ The curated data enables:
 
 ---
 
+## 🏗️ System Architecture Overview
+
+At a high level, the system consists of:
+
+- A **PostgreSQL database** with star schema design
+- **Python ETL scripts** using Pandas and SQLAlchemy
+- **Apache Airflow DAGs** for orchestration and scheduling
+- **Tableau Public** for visualization and reporting
+- **Docker containers** for consistent development/deployment
+- **GitHub Actions** for automated testing and deployment
+
 
 ## 🏗️ Architecture
 ![Architecture Diagram](docs/architecture.png)
