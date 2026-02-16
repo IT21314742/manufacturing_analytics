@@ -64,6 +64,10 @@ At a high level, the system consists of:
 ### 📈 Detailed Workflow Sequence Diagram
 ![Sequence Diagram](/diagrams/MASQ.drawio.png)
 
+### 🏗️ Star Schema Diagram
+![Star Scema Diagram](/diagrams/MASQ.drawio.png)
+
+
 
 ## ⌛️ Runtime Sequence Explanation
 
