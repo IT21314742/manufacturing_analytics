@@ -239,9 +239,19 @@ airflow standalone
 # Trigger the 'manufacturing_etl' DAG
 ```
 
-
 ### Running Analytical Queries
 Execute predefined analytical queries:
 ```
 psql -d manufacturing_db -f DB_Manipulation_Queries.sql
 ```
+
+### Sample queries included:
+
+- Monthly production efficiency trends
+
+- Cost analysis by product line
+
+- Revenue forecasting
+
+- Machine downtime patterns
+
