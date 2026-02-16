@@ -60,11 +60,17 @@ At a high level, the system consists of:
 ### Full System Architecture Diagram
 ![Architecture Diagram](/diagrams/MASD.drawio.png)
 
-* This diagram illustrates the end-to-end data pipeline for the Manufacturing Analytics platform. It shows how data flows from multiple sources (production databases, financial systems, sensors, and CSV files) through the ingestion layer, into the ETL pipeline orchestrated by Apache Airflow, and finally into the PostgreSQL data warehouse with its star schema design. The warehouse feeds into Tableau Public for business intelligence, while the entire infrastructure is containerized with Docker and automated via GitHub Actions CI/CD. The diagram highlights the separation of concerns between data sources, processing layers, storage, and visualization components * 
+* This diagram illustrates the end-to-end data pipeline for the Manufacturing Analytics platform. It shows how data flows from multiple sources (production databases, financial systems, sensors, and CSV files) through the ingestion layer, into the ETL pipeline orchestrated by Apache Airflow, and finally into the PostgreSQL data warehouse with its star schema design. The warehouse feeds into Tableau Public for business intelligence, while the entire infrastructure is containerized with Docker and automated via GitHub Actions CI/CD. The diagram highlights the separation of concerns between data sources, processing layers, storage, and visualization components *
+---
+ 
 
 
 ### 📈 Detailed Workflow Sequence Diagram
 ![Sequence Diagram](/diagrams/MASQ.drawio.png)
+
+* Sequence diagram illustrates the runtime behavior of the ETL pipeline from trigger to completion. It shows the chronological interaction between system components during a typical pipeline execution. The flow begins with a user or automated trigger activating the Airflow DAG, which then orchestrates the Python ETL scripts. The Python modules extract raw data from PostgreSQL, perform transformations and KPI calculations, validate data quality, and finally load the processed data back into the warehouse's staging area, dimensions, and fact tables. Upon successful completion, Airflow sends a notification, and the user can then access updated visualizations in Tableau, which queries the fresh data from PostgreSQL *
+
+---
 
 ### 🏗️ Star Schema Diagram
 ![Star Scema Diagram](/diagrams/MASSD.drawio.png)
