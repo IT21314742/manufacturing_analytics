@@ -190,6 +190,11 @@ conda activate manufacturing-analytics
    ```
    CREATE DATABASE manufacturing_db;
    ```
+
+2. Set up environment variables:
+   ```
+
+   ```
 ## 🚀 Quick Start
 
 ### Prerequisites
