@@ -178,6 +178,11 @@ Using pip:
 ```
 pip install -r requirements.txt
 ```
+
+Using Conda:
+```conda env create -f environment.yml
+conda activate manufacturing-analytics
+```
 ## 🚀 Quick Start
 
 ### Prerequisites
