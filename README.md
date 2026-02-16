@@ -310,3 +310,15 @@ The architecture is designed for extension. Possible improvements include:
 - Machine Learning - Add predictive maintenance models
 - Additional data sources - Connect to ERP systems, IoT platforms
 - Advanced visualizations - Add more Tableau dashboards
+
+### Export Options
+- JSON export for API consumption
+- CSV exports for Excel users
+- Automated PDF report generation
+- Email notifications with summary attachments
+
+### Performance Optimizations
+- Incremental loading strategies
+- Partitioning large fact tables
+- Materialized views for frequent queries
+- Query optimization and indexing
