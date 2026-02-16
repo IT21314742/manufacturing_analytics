@@ -299,3 +299,14 @@ LIMIT 5;
 | Control Unit   | 295,000       | 210,000    | 85,000  | 28.81%        |
 | Bearing Set    | 210,000       | 155,000    | 55,000  | 26.19%        |
 | Wiring Harness | 175,000       | 132,000    | 43,000  | 24.57%        |
+
+
+
+## 🧱 Extending the System
+The architecture is designed for extension. Possible improvements include:
+
+### Additional Features
+- Real-time streaming - Integrate Kafka for live sensor data
+- Machine Learning - Add predictive maintenance models
+- Additional data sources - Connect to ERP systems, IoT platforms
+- Advanced visualizations - Add more Tableau dashboards
