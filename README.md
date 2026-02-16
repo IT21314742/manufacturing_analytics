@@ -328,3 +328,13 @@ The architecture is designed for extension. Possible improvements include:
 ## 🧪 Testing
 
 ### Run the test suite:
+```
+# Run all tests
+pytest tests/
+
+# Run specific test modules
+pytest tests/test_transform.py -v
+
+# Run with coverage report
+pytest --cov=src tests/
+```
