@@ -58,7 +58,7 @@ At a high level, the system consists of:
 
 
 ### Full System Architecture Diagram
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](/diagrams/MASD.drawio.png)
 
 
 ## ⌛️ Runtime Sequence Explanation
