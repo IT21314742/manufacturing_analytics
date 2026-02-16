@@ -3,7 +3,7 @@
 ## 📊 Project Overview
 end-to-end data pipeline platform that integrates manufacturing operational data with financial metrics. Built with Python, PostgreSQL, and Apache Airflow, it demonstrates modern data engineering practices including ETL orchestration, star schema warehousing, and business intelligence visualization.
 
-The project showcases the complete data lifecycle from raw data ingestion through transformation to interactive dashboards—providing a scalable foundation for manufacturing performance analysis.
+The project showcases the complete data lifecycle from raw data ingestion through transformation to interactive dashboards, providing a scalable foundation for manufacturing performance analysis.
 
 ---
 
