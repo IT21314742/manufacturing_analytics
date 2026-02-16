@@ -219,16 +219,5 @@ This will start:
 
 - Other services as configured
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.9+
-- PostgreSQL 15+
-- Git
-
-### Installation
-1. Clone repository:
-```bash
-git clone https://github.com/yourusername/manufacturing-analytics.git
-cd manufacturing-analytics
+## ▶️ Usage
 
