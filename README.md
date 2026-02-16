@@ -184,6 +184,12 @@ Using Conda:
 conda env create -f environment.yml
 conda activate manufacturing-analytics
 ```
+
+### Step 3: Configure Database
+1. Create a PostgreSQL database:
+   ```
+   CREATE DATABASE manufacturing_db;
+   ```
 ## 🚀 Quick Start
 
 ### Prerequisites
