@@ -166,6 +166,13 @@ The ETL pipeline transitions through these states:
 - Docker (optional, for containerized setup)
 - Git
 
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/IT21314742/manufacturing_analytics.git
+cd manufacturing_analytics
+```
+
 ## 🚀 Quick Start
 
 ### Prerequisites
