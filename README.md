@@ -89,6 +89,19 @@ The ETL pipeline transitions through these states:
 
 ## 🛠️ Technology Stack
 
+| Component          | Technology Choice                          |
+|--------------------|---------------------------------------------|
+| **Database**       | PostgreSQL 15+ (Star Schema Design)         |
+| **ETL**            | Python 3.9+, Pandas, SQLAlchemy             |
+| **Orchestration**  | Apache Airflow                              |
+| **BI & Reporting** | Tableau Public                              |
+| **Container**      | Docker, docker-compose                       |
+| **CI/CD**          | GitHub Actions                              |
+| **Version Control**| Git/GitHub                                  |
+| **Monitoring**     | Airflow Logs, `etl_pipeline.log`              |
+
+---
+
 
 
 ## 🛠️ Tech Stack
