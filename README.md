@@ -193,7 +193,8 @@ conda activate manufacturing-analytics
 
 2. Set up environment variables:
    ```
-
+   cp .env.example .env
+   # Edit .env with your database credentials
    ```
 ## 🚀 Quick Start
 
