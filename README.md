@@ -211,6 +211,14 @@ conda activate manufacturing-analytics
 docker-compose up -d
 ```
 
+This will start:
+
+- PostgreSQL container
+
+- Adminer for database management (port 8080)
+
+- Other services as configured
+
 ## 🚀 Quick Start
 
 ### Prerequisites
