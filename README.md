@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.9+-blue.svg">
+  <img src="https://img.shields.io/badge/postgresql-15+-blue.svg">
+  <img src="https://img.shields.io/badge/apache%20airflow-2.0+-green.svg">
+  <img src="https://img.shields.io/badge/tableau-public-orange.svg">
+  <img src="https://img.shields.io/badge/docker-ready-blue.svg">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg">
+</p>
+
 # Manufacturing & Financial Data Analytics Hub
 
 ## 📊 Project Overview
