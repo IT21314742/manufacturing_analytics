@@ -289,3 +289,6 @@ WHERE date_trunc('month', transaction_date) = '2026-03-01'
 ORDER BY profit DESC
 LIMIT 5;
 ```
+
+### Output:
+
