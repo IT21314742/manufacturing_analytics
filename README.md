@@ -272,3 +272,6 @@ jupyter notebook notebooks/exploratory_analysis.ipynb
 | Average Cost Per Unit | $24.50 | March 2026 | 📉 -3.1% |
 | Downtime Percentage | 12.3% | March 2026 | 🟡 Warning |
 | Revenue | $3.2M | Q1 2026 | 📈 +8.7% |
+
+
+### Sample Query Result
