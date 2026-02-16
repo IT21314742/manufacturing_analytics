@@ -160,6 +160,12 @@ The ETL pipeline transitions through these states:
 
 ## 📦 Installation
 
+### Prerequisites
+- Python 3.9+
+- PostgreSQL 15+
+- Docker (optional, for containerized setup)
+- Git
+
 ## 🚀 Quick Start
 
 ### Prerequisites
