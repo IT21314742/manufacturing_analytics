@@ -341,3 +341,11 @@ pytest --cov=src tests/
 
 
 ## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! This project is intended for data engineers, analysts, and developers interested in:
+
+- Data pipeline architecture
+- ETL/ELT processes
+- Data warehousing
+- Business intelligence
+- Manufacturing analytics
