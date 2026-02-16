@@ -36,6 +36,16 @@ The ETL process:
 - Loads into a **star schema** with fact and dimension tables
 - Maintains slowly changing dimensions for historical accuracy
 
+### 3️⃣ Analytics & Visualization
+The curated data enables:
+- Production efficiency tracking (OEE, downtime analysis)
+- Cost per unit calculations
+- Revenue and profitability trends
+- Interactive Tableau dashboards for decision support
+
+---
+
+
 ## 🏗️ Architecture
 ![Architecture Diagram](docs/architecture.png)
 
