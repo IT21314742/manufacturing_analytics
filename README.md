@@ -322,3 +322,9 @@ The architecture is designed for extension. Possible improvements include:
 - Partitioning large fact tables
 - Materialized views for frequent queries
 - Query optimization and indexing
+
+
+
+## 🧪 Testing
+
+### Run the test suite:
