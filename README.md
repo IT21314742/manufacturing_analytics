@@ -173,6 +173,11 @@ git clone https://github.com/IT21314742/manufacturing_analytics.git
 cd manufacturing_analytics
 ```
 
+### Step 2: Set Up Python Environment
+Using pip:
+```
+pip install -r requirements.txt
+```
 ## 🚀 Quick Start
 
 ### Prerequisites
