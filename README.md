@@ -260,3 +260,5 @@ psql -d manufacturing_db -f DB_Manipulation_Queries.sql
 ```
 jupyter notebook notebooks/exploratory_analysis.ipynb
 ```
+
+## 📊 Example Output
