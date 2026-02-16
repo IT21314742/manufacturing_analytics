@@ -62,7 +62,7 @@ At a high level, the system consists of:
 
 
 ### 📈 Detailed Workflow Sequence Diagram
-![Sequence Diagram](/diagrams/MASD.drawio.png)
+![Sequence Diagram](/diagrams/MASQ.drawio.png)
 
 
 ## ⌛️ Runtime Sequence Explanation
