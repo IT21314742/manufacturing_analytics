@@ -207,6 +207,9 @@ conda activate manufacturing-analytics
    ```
 
 ### Step 4: Docker Setup 
+```
+docker-compose up -d
+```
 
 ## 🚀 Quick Start
 
