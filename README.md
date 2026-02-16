@@ -74,6 +74,8 @@ The system follows this execution flow:
 7. **Notification** - Success/failure alerts are logged and sent
 8. **Visualization** - Tableau connects to the warehouse for dashboard updates
 
+### Workflow States
+
 ## 🛠️ Tech Stack
 - **Database:** PostgreSQL (Star Schema)
 - **ETL:** Python (Pandas, SQLAlchemy), Apache Airflow
