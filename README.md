@@ -65,7 +65,7 @@ At a high level, the system consists of:
 ![Sequence Diagram](/diagrams/MASQ.drawio.png)
 
 ### 🏗️ Star Schema Diagram
-![Star Scema Diagram](/diagrams/MASQ.drawio.png)
+![Star Scema Diagram](/diagrams/MASSD.drawio.png)
 
 
 
