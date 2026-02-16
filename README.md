@@ -238,3 +238,10 @@ airflow standalone
 # Access Airflow UI at http://localhost:8080
 # Trigger the 'manufacturing_etl' DAG
 ```
+
+
+### Running Analytical Queries
+Execute predefined analytical queries:
+```
+psql -d manufacturing_db -f DB_Manipulation_Queries.sql
+```
