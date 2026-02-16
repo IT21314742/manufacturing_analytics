@@ -199,7 +199,11 @@ conda activate manufacturing-analytics
 
 3. Initialize the schema:
    ```
-   
+   # Using Python helper
+   python start_postgres.py
+
+   # Or manually with psql
+   psql -d manufacturing_db -f PostgreSQL_Schema.sql
    ```
 ## 🚀 Quick Start
 
