@@ -18,6 +18,9 @@ The project showcases the complete data lifecycle from raw data ingestion throug
 ---
 
 
+## 🧠 How the Project Works
+
+
 ## 🏗️ Architecture
 ![Architecture Diagram](docs/architecture.png)
 
