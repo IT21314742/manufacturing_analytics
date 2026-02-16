@@ -61,7 +61,7 @@ At a high level, the system consists of:
 ![Architecture Diagram](docs/architecture.png)
 
 
-### Runtime Sequence Explanation
+## ⌛️ Runtime Sequence Explanation
 
 The system follows this execution flow:
 
