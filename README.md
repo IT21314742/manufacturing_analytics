@@ -85,6 +85,12 @@ The ETL pipeline transitions through these states:
 - **🔄 Retrying** - Automatic retry of failed tasks
 - **⏸️ Paused** - Manual pause of DAG execution
 
+---
+
+## 🛠️ Technology Stack
+
+
+
 ## 🛠️ Tech Stack
 - **Database:** PostgreSQL (Star Schema)
 - **ETL:** Python (Pandas, SQLAlchemy), Apache Airflow
