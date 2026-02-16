@@ -60,6 +60,9 @@ At a high level, the system consists of:
 ### Full System Architecture Diagram
 ![Architecture Diagram](docs/architecture.png)
 
+
+### Runtime Sequence Explanation
+
 ## 🛠️ Tech Stack
 - **Database:** PostgreSQL (Star Schema)
 - **ETL:** Python (Pandas, SQLAlchemy), Apache Airflow
