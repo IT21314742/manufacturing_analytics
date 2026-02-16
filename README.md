@@ -221,3 +221,5 @@ This will start:
 
 ## ▶️ Usage
 
+### Running the ETL Pipeline
+Option 1: Manual Execution
