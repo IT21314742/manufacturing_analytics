@@ -60,6 +60,8 @@ At a high level, the system consists of:
 ### Full System Architecture Diagram
 ![Architecture Diagram](/diagrams/MASD.drawio.png)
 
+* This diagram illustrates the end-to-end data pipeline for the Manufacturing Analytics platform. It shows how data flows from multiple sources (production databases, financial systems, sensors, and CSV files) through the ingestion layer, into the ETL pipeline orchestrated by Apache Airflow, and finally into the PostgreSQL data warehouse with its star schema design. The warehouse feeds into Tableau Public for business intelligence, while the entire infrastructure is containerized with Docker and automated via GitHub Actions CI/CD. The diagram highlights the separation of concerns between data sources, processing layers, storage, and visualization components * 
+
 
 ### 📈 Detailed Workflow Sequence Diagram
 ![Sequence Diagram](/diagrams/MASQ.drawio.png)
