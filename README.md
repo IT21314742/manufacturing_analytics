@@ -196,6 +196,11 @@ conda activate manufacturing-analytics
    cp .env.example .env
    # Edit .env with your database credentials
    ```
+
+3. Initialize the schema:
+   ```
+   
+   ```
 ## 🚀 Quick Start
 
 ### Prerequisites
