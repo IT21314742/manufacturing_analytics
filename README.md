@@ -255,3 +255,8 @@ psql -d manufacturing_db -f DB_Manipulation_Queries.sql
 
 - Machine downtime patterns
 
+
+### Jupyter Notebook Exploration
+```
+jupyter notebook notebooks/exploratory_analysis.ipynb
+```
