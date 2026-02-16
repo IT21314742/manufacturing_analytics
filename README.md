@@ -104,15 +104,10 @@ The ETL pipeline transitions through these states:
 
 
 
-## 🛠️ Tech Stack
-- **Database:** PostgreSQL (Star Schema)
-- **ETL:** Python (Pandas, SQLAlchemy), Apache Airflow
-- **BI:** Tableau Public
-- **Orchestration:** Docker, GitHub Actions
-- **Version Control:** Git/GitHub
+
 
 ## 📁 Project Structure
-(Show the tree structure here)
+
 
 ## 🚀 Quick Start
 
