@@ -57,7 +57,7 @@ At a high level, the system consists of:
 - **GitHub Actions** for automated testing and deployment
 
 
-## 🏗️ Architecture
+### Full System Architecture Diagram
 ![Architecture Diagram](docs/architecture.png)
 
 ## 🛠️ Tech Stack
