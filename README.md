@@ -20,6 +20,14 @@ The project showcases the complete data lifecycle from raw data ingestion throug
 
 ## 🧠 How the Project Works
 
+The system operates through three integrated layers:
+
+### 1️⃣ Data Ingestion & Staging
+Raw manufacturing data (production logs, machine sensors) and financial records are:
+- Extracted from source files/APIs
+- Validated for completeness and accuracy
+- Staged in temporary tables for transformation
+
 
 ## 🏗️ Architecture
 ![Architecture Diagram](docs/architecture.png)
