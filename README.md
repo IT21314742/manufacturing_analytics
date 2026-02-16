@@ -105,7 +105,58 @@ The ETL pipeline transitions through these states:
 
 ## 📁 Project Structure
 
-``sfvfsvfdfv``
+```manufacturing_analytics/
+│
+├── 📂 src/ # Core ETL code
+│ ├── 📂 extract/ # Data extraction modules
+│ │ ├── extract_production.py
+│ │ ├── extract_financial.py
+│ │ └── extract_machine_data.py
+│ │
+│ ├── 📂 transform/ # Data transformation logic
+│ │ ├── clean_data.py
+│ │ ├── calculate_kpis.py
+│ │ └── merge_datasets.py
+│ │
+│ └── 📂 load/ # Database loading scripts
+│ ├── load_dimensions.py
+│ └── load_facts.py
+│
+├── 📂 airflow/
+│ └── 📂 dags/ # Airflow DAG definitions
+│ ├── manufacturing_etl.py # Main ETL pipeline DAG
+│ └── data_quality_dag.py # Data validation DAG
+│
+├── 📂 config/ # Configuration files
+│ ├── database.ini # DB connection settings
+│ └── logging.conf # Logging configuration
+│
+├── 📂 notebooks/ # Jupyter notebooks for exploration
+│ └── exploratory_analysis.ipynb
+│
+├── 📂 docs/ # Documentation
+│ └── data_dictionary.md # Schema documentation
+│
+├── 📂 tests/ # Unit and integration tests
+│ ├── test_extract.py
+│ ├── test_transform.py
+│ └── test_load.py
+│
+├── 📂 .vscode/ # VS Code configuration
+│ └── settings.json
+│
+├── 📄 PostgreSQL_Schema.sql # Complete database schema
+├── 📄 DB_Manipulation_Queries.sql # Sample analytical queries
+├── 📄 docker-compose.yml # Container orchestration
+├── 📄 .env.example # Environment variables template
+├── 📄 requirements.txt # Python dependencies
+├── 📄 environment.yml # Conda environment
+├── 📄 start_postgres.py # DB initialization helper
+├── 📄 etl_pipeline.log # Pipeline execution logs
+├── 📄 .gitattributes # Git attributes
+├── 📄 .gitignore # Git ignore rules
+└── 📄 README.md # You are here!
+```
 
 
 ## 🚀 Quick Start
