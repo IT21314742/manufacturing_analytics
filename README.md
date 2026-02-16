@@ -349,3 +349,10 @@ Contributions, issues, and feature requests are welcome! This project is intende
 - Data warehousing
 - Business intelligence
 - Manufacturing analytics
+
+
+## 🙏 Acknowledgments
+- PostgreSQL community
+- Apache Airflow team
+- Tableau Public
+- All contributors and testers
