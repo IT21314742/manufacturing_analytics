@@ -205,6 +205,9 @@ conda activate manufacturing-analytics
    # Or manually with psql
    psql -d manufacturing_db -f PostgreSQL_Schema.sql
    ```
+
+### Step 4: Docker Setup 
+
 ## 🚀 Quick Start
 
 ### Prerequisites
