@@ -292,3 +292,10 @@ LIMIT 5;
 
 ### Output:
 
+ product_name  | total_revenue | total_cost | profit  | profit_margin
+----------------+---------------+------------+---------+---------------
+ Industrial Fan |    450,000    |  310,000   | 140,000 |     31.11%
+ Motor Assembly |    380,000    |  275,000   | 105,000 |     27.63%
+ Control Unit   |    295,000    |  210,000   | 85,000  |     28.81%
+ Bearing Set    |    210,000    |  155,000   | 55,000  |     26.19%
+ Wiring Harness |    175,000    |  132,000   | 43,000  |     24.57%
