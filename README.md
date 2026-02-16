@@ -229,3 +229,12 @@ python src/extract/extract_production.py
 python src/transform/calculate_kpis.py
 python src/load/load_facts.py
 ```
+
+Option 2: Using Airflow
+```
+# Start Airflow
+airflow standalone
+
+# Access Airflow UI at http://localhost:8080
+# Trigger the 'manufacturing_etl' DAG
+```
