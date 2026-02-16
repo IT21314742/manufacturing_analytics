@@ -338,3 +338,6 @@ pytest tests/test_transform.py -v
 # Run with coverage report
 pytest --cov=src tests/
 ```
+
+
+## 🤝 Contributing
