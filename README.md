@@ -155,9 +155,10 @@ The ETL pipeline transitions through these states:
 ├── 📄 etl_pipeline.log # Pipeline execution logs
 ├── 📄 .gitattributes # Git attributes
 ├── 📄 .gitignore # Git ignore rules
-└── 📄 README.md # You are here!
+└── 📄 README.md # You are here Mate!!
 ```
 
+## 📦 Installation
 
 ## 🚀 Quick Start
 
