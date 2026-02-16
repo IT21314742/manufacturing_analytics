@@ -29,6 +29,13 @@ Raw manufacturing data (production logs, machine sensors) and financial records 
 - Staged in temporary tables for transformation
 
 
+### 2️⃣ Transformation & Warehousing
+The ETL process:
+- Cleans and normalizes raw data
+- Applies business logic and calculations
+- Loads into a **star schema** with fact and dimension tables
+- Maintains slowly changing dimensions for historical accuracy
+
 ## 🏗️ Architecture
 ![Architecture Diagram](docs/architecture.png)
 
